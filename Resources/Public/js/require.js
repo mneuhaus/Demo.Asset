@@ -1,0 +1,1 @@
+jQuery("span.require-js").css("background", "green");

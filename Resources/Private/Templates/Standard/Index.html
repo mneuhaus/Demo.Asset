@@ -1,0 +1,56 @@
+<f:layout name="Default" />
+{namespace as=TYPO3\Asset\ViewHelpers}
+
+<f:section name="Title">Index view of Standard controller</f:section>
+
+<f:section name="Content">
+	<table>
+		<tr>
+			<th>Styles with less</th>
+			<td>
+				<span class="default-red main-less"></span>
+				<as:bundle.css name="Demo.Asset:LessStyles" />
+			</td>
+		</tr>
+		<tr>
+			<th>Styles with CSS</th>
+			<td>
+				<span class="default-red main-css"></span>
+				<as:bundle.css name="Demo.Asset:CssStyles" />
+			</td>
+		</tr>
+		<tr>
+			<th>Styles with inherited Variables</th>
+			<td>
+				<span class="default-red dependency-less"></span>
+				<as:bundle.css name="Demo.Asset:DependencyStyles" />
+			</td>
+		</tr>
+		<tr>
+			<th>Styles with Alterations</th>
+			<td>
+				<span class="default-red complex-css"></span>
+				<as:bundle.css name="Demo.Asset:ComplexStyles" />
+			</td>
+		</tr>
+		<tr>
+			<th>&nbsp;</th>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Simple Script</th>
+			<td>
+				<span class="default-red main-js"></span>
+				<as:bundle.js name="Demo.Asset:Main" />
+			</td>
+		</tr>
+		<tr>
+			<th>Required Js</th>
+			<td>
+				<span class="default-red require-js"></span>
+				<as:requireJs name="Demo.Asset:Require" />
+				<as:requireJs flush="true" />
+			</td>
+		</tr>
+	</table>
+</f:section>
