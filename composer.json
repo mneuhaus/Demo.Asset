@@ -1,1 +1,17 @@
-{"name":"demo\/asset","type":"typo3-flow-package","description":"","version":"","require":{"typo3\/flow":"*"},"autoload":{"psr-0":{"Demo\\Asset":"Classes"}}}
+{
+
+	"name":"demo\/asset",
+	"type":"typo3-flow-package",
+	"description":"",
+	"version":"",
+	"require": {
+		"typo3\/flow":"*",
+		"typo3\/asset":"*",
+		"twig\/twig": "*"
+	},
+	"autoload": {
+		"psr-0": {
+			"Demo\\Asset":"Classes"
+		}
+	}
+}
